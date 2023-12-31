@@ -1,0 +1,30 @@
+h1 {
+  /* padding: 10px 10px 0; */
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  margin: 10px;
+  margin-bottom: 20px;
+  line-height: 29px;
+}
+
+input {
+  width: 100%;
+  padding: 4px;
+}
+
+.item-container {
+  text-align: left;
+}
+.a-row {
+  margin: 10px 5px;
+}
+
+.colwidth {
+  width: 6.66% !important;
+}
+
+.a-button {
+  min-width: 72px;
+}
