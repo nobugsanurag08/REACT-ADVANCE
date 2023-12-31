@@ -1,0 +1,11 @@
+.display {
+  /* margin: 10px; */
+  /* width: 150px; */
+  /* font-size: 45px; */
+  margin: 16px;
+  margin-left: 24px;
+}
+input {
+  padding: 10px;
+  width: 350px;
+}
