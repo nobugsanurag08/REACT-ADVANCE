@@ -1,11 +1,15 @@
 import { useRef } from "react";
 import { IoIosAddCircle } from "react-icons/io";
-function AddTodo(props) {
-  const props1 = props;
+import { useContext } from "react";
+import TodoContextApi from "../store/TodolistContextApi";
+
+function AddTodo() {
   // const [itemName, setItemName] = useState("");
   // const [dueDate, setDueDate] = useState("");
   const nameRef = useRef(); //**************************************use of form and useRef
   const dueDateRef = useRef();
+
+  const { addNewItem } = useContext(TodoContextApi);
   // const addItemName = (event) => {
   //   setItemName(event.target.value);
   // };
@@ -20,7 +24,7 @@ function AddTodo(props) {
     nameRef.current.value = "";
     dueDateRef.current.value = "";
 
-    props1.onclickEvent(itemName, dueDate);
+    addNewItem(itemName, dueDate);
     // setItemName("");
     // setDueDate("");
   };

@@ -41,7 +41,6 @@ function App() {
   };
 
   const deleteItem = (name) => {
-    console.log("hello delete clicked!!", name);
     const newItemList = todoItems.filter((item) => {
       return item.name !== name;
     });
